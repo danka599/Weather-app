@@ -16,6 +16,7 @@ header {
   margin-left: 450px;
   margin-right: 450px;
   margin-top: 80px;
+  min-width: 250px;
 }
 
 form {
