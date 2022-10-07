@@ -42,12 +42,15 @@ input {
 }
 p {
   text-align: left;
-  margin-left: 910px;
+  margin-left: 800px;
   color: grey;
   font-size: smaller;
 }
 img {
   width: 80px;
+}
+#code-source {
+  text-decoration: none;
 }
 .today {
   display: block;
