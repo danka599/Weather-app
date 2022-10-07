@@ -1,6 +1,12 @@
+#background-image {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
 body {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/316/original/misty-mountain.jpg?1663345244");
-  background-size: 100%;
   font-family: "B612 Mono", monospace;
 }
 
