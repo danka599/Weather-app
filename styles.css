@@ -1,0 +1,76 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/316/original/misty-mountain.jpg?1663345244");
+  background-size: 100%;
+  font-family: "B612 Mono", monospace;
+}
+
+header {
+  text-align: center;
+  border: 3px solid #dee2e6;
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-top: 80px;
+}
+
+form {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: larger;
+  margin-left: 22px;
+}
+h2 {
+  margin-top: 0;
+  margin-left: 160px;
+  font-size: 34px;
+  padding-top: 20px;
+  text-align: start;
+  color: #194365;
+  text-transform: capitalize;
+}
+input {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+p {
+  text-align: left;
+  margin-left: 910px;
+  color: grey;
+  font-size: smaller;
+}
+img {
+  width: 80px;
+}
+.today {
+  display: block;
+  width: 140px;
+  padding: 0 auto;
+  margin-top: 0;
+}
+.col-1 {
+  font-size: 23px;
+  padding-top: 23px;
+  color: #194365;
+}
+.col-7 {
+  font-size: smaller;
+}
+.degrees {
+  font-weight: bol;
+  font-size: 70px;
+  color: #194365;
+}
+.col {
+  font-size: small;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+.units {
+  font-size: 25px;
+}
+#celsius,
+#fahrenheit {
+  text-decoration: none;
+}

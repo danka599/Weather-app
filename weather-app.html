@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9379339875.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <form id="city-form">
+        <input
+          id="input-city"
+          type="text"
+          placeholder="Enter your city"
+          name="Search city"
+          autofocus="on"
+          style="
+            text-align: center;
+            background-color: white;
+            opacity: 0.6;
+            text-transform: capitalize;
+          "
+        />
+        <input
+          type="submit"
+          value="Search"
+          style="color: #194365; opacity: 0.9"
+        />
+        <input
+          type="button"
+          id="button"
+          value="Current"
+          style="color: #194365; opacity: 0.9"
+        />
+      </form>
+      <div class="container">
+        <h2>
+          <span id="chosen-city">Utrecht </span> <span id="country">NL</span>
+        </h2>
+        <div class="row p-0 m-0">
+          <span class="col-1"
+            ><img class="today" src="images/sun-rain.png" alt="src/" />
+          </span>
+          <span class="col-7">
+            <div class="degrees">
+              <span id="temperature"> 16</span
+              ><span class="units">
+                <a href="#" id="celsius">°C</a>|
+                <a href="#" id="fahrenheit">°F</a></span
+              >
+            </div>
+            <span id="actual-weather">Rain</span> <br />
+            Humidity: <span id="humidity">80</span> % <br />
+            Wind: <span id="wind-speed">18</span> km/h
+          </span>
+          <span class="col-1">
+            <span id="changeDay">Friday</span> <br />
+            <span id="changeTime">14:54</span>
+          </span>
+          <div class="container">
+            <div class="row">
+              <span class="col">
+                Saturday <br />
+                18/15°C
+                <img src="images/cloudy.png" alt="cloudy" />
+              </span>
+              <span class="col"
+                >Sunday <br />
+                15/12°C <img src="images/sun-rain.png" alt="rain"
+              /></span>
+              <span class="col"
+                >Monday <br />
+                22/17°C
+                <img src="images/sun.png" alt="sun"
+              /></span>
+              <span class="col"
+                >Tuesday <br />
+                19/12°C
+                <img src="images/cloudy.png" alt="cloudy"
+              /></span>
+              <span class="col"
+                >Wednesday <br />
+                21/15°C
+                <img src="images/sun.png" alt="sun"
+              /></span>
+              <span class="col"
+                >Thursday <br />
+                14/10°C
+                <img src="images/sun-rain.png" alt="rain"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <p>Coded by Dana Oskrobana</p>
+    <script src="javascript.js"></script>
+  </body>
+</html>
