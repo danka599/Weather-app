@@ -5,6 +5,7 @@
   z-index: -1;
   left: 0;
   top: 0;
+  max-width: max-content;
 }
 body {
   font-family: "B612 Mono", monospace;
@@ -52,10 +53,15 @@ img {
 #code-source {
   text-decoration: none;
 }
+.col {
+  font-size: small;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
 .today {
   display: block;
-  width: 140px;
-  padding: 0 auto;
+  width: 120px;
   margin-top: 0;
 }
 .col-1 {
@@ -71,12 +77,7 @@ img {
   font-size: 70px;
   color: #194365;
 }
-.col {
-  font-size: small;
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-}
+
 .units {
   font-size: 25px;
 }
