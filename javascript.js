@@ -1,6 +1,6 @@
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
-  let showTemp = response.data.main.temp;
+  showTemp = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(showTemp);
   document.querySelector("#chosen-city").innerHTML = response.data.name;
   document.querySelector("#country").innerHTML = response.data.sys.country;
@@ -38,7 +38,7 @@ function enterCity(event) {
   let cityInput = document.querySelector(`#input-city`);
   search(cityInput.value);
 }
-search("Amsterdam");
+
 let form = document.querySelector(`#city-form`);
 form.addEventListener(`submit`, enterCity);
 
@@ -75,18 +75,19 @@ changeTime.innerHTML = `${hours}:${minutes}`;
 function changeTemperatureToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
+  let fahrenheitTemperature = (showTemp * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function changeTemperatureToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = celsiusTemp;
+  temperatureElement.innerHTML = Math.round(showTemp);
 }
-let celsiusTemp = null;
+let showTemp = null;
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", changeTemperatureToFahrenheit);
 
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", changeTemperatureToCelsius);
+search("Amsterdam");
