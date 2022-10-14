@@ -74,6 +74,8 @@ changeTime.innerHTML = `${hours}:${minutes}`;
 
 function changeTemperatureToFahrenheit(event) {
   event.preventDefault();
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (showTemp * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
@@ -81,6 +83,8 @@ function changeTemperatureToFahrenheit(event) {
 
 function changeTemperatureToCelsius(event) {
   event.preventDefault();
+  fahrenheit.classList.remove("active");
+  celsius.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(showTemp);
 }
