@@ -1,3 +1,19 @@
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["friday", "saturday", "sunday", "monday", "tuesday", "wednesday"];
+  days.forEach(function (days) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+                <div class="weather-forecast-day">${days} </div>
+                <div class="weather-forecast-temperature">18/15°C</div>
+                <img  class="icon" src="images/cloudy.png" alt="cloudy" />
+                </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   showTemp = response.data.main.temp;
@@ -95,3 +111,4 @@ fahrenheit.addEventListener("click", changeTemperatureToFahrenheit);
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", changeTemperatureToCelsius);
 search("Amsterdam");
+displayForecast();

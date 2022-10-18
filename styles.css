@@ -59,6 +59,7 @@ img {
   padding: 0;
   padding-top: 30px;
 }
+
 .today {
   display: block;
   width: 120px;
@@ -87,4 +88,7 @@ img {
 }
 .units .active {
   color: #194365;
+}
+.weather-forecast {
+  margin-top: 20px;
 }
