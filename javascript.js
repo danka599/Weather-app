@@ -124,28 +124,4 @@ changeDay.innerHTML = `${day}`;
 let changeTime = document.querySelector(`#changeTime`);
 changeTime.innerHTML = `${hours}:${minutes}`;
 
-//Unit change
-
-function changeTemperatureToFahrenheit(event) {
-  event.preventDefault();
-  celsius.classList.remove("active");
-  fahrenheit.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (showTemp * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function changeTemperatureToCelsius(event) {
-  event.preventDefault();
-  fahrenheit.classList.remove("active");
-  celsius.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(showTemp);
-}
-let showTemp = null;
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", changeTemperatureToFahrenheit);
-
-let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", changeTemperatureToCelsius);
 search("Amsterdam");

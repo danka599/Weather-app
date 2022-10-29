@@ -44,7 +44,7 @@ input {
 p {
   text-align: left;
   margin-left: 800px;
-  color: grey;
+  color: rgb(75, 74, 74);
   font-size: smaller;
 }
 img {
@@ -74,21 +74,16 @@ img {
   font-size: smaller;
 }
 .degrees {
-  font-weight: bol;
   font-size: 70px;
   color: #194365;
 }
 
 .units {
-  font-size: 25px;
+  font-size: 40px;
+  position: relative;
+  top: -15px;
 }
-#celsius,
-#fahrenheit {
-  text-decoration: none;
-}
-.units .active {
-  color: #194365;
-}
+
 .weather-forecast {
   margin-top: 20px;
 }
